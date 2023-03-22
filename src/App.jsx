@@ -102,7 +102,7 @@ export default function App() {
             <h3 className="time">Current time: {time.value}s</h3>
             
             <h1 className="title">Tenzies</h1>
-            <h3 className="time">Best time: {JSON.parse(localStorage.getItem("time"))}s</h3>
+            <h3 className="time">Best time: {JSON.parse(localStorage.getItem("time")) || 0}s</h3>
             <p className="instructions">Roll until all dice are the same. 
             Click each die to freeze it at its current value between rolls.</p>
             <div className="dice-container">
